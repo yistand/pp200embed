@@ -1,16 +1,4 @@
-Email from Xianglei on 10/27/15:
-Hi Yi,
 
-I am restaging them now from HPSS. You will find the data here at PDSF,
-/projecta/projectdirs/starprod/embedding/pp200_production_2012/*20152801
-For the efficiency, you can read those .minimc.root files. There is McTrack branch to
-record all the information of input MC particles. And there is a matchedPairs branch
-to record the information of the reconstructed tracks. A bayesian division will
-give you the efficiency.
-By the way, restaging is still going on. I will let you know once it is done.
-
-Regards,
-Xianglei
 
 
 execute root macro minimc_macro.cc with the following arguments:
