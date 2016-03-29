@@ -1,0 +1,15 @@
+2015.10.31	Li Yi
+get efficiency for Proton, Kaon, Pion
+
+embedding data for P12id from pdsf
+
+use geteff/make_efficiencies.C to read mc data SingleXXXXX_Embed_200GeV.root. 
+it produces XXX200GeV.root files with hpt for efficiency
+use geteff/fiteff.C to get fit paramters and store in .txt files.
+
+
+2016.03.29	Li Yi
+
+use geteff/makeEffVsEta.C for TPC efficiency vs eta. It read mc data SingleXXXXX_Embed_200GeV.root. 
+it produces EtaDep_XXX200GeV.root files with heta for efficiency for each species.
+Then EtaDep_Inclusive200GeV.root is hadd from various species for more statistics. heta in EtaDep_Inclusive200GeV.root is updated with heta_mc/heta_re, then it is normalized to be average=1, as the scaling has already be taken into account in eff vs pt hisogram.  
